@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Documentation &mdash; PIXAL 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to PIXAL’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PIXAL
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#anomalyexplanation"><code class="docutils literal notranslate"><span class="pre">AnomalyExplanation</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pixal"><code class="docutils literal notranslate"><span class="pre">Pixal</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PIXAL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pixal.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="documentation">
+<h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="anomalyexplanation">
+<h2><code class="docutils literal notranslate"><span class="pre">AnomalyExplanation</span></code><a class="headerlink" href="#anomalyexplanation" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="anomaly_explanation.AnomalyExplanation">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">anomaly_explanation.</span></span><span class="sig-name descname"><span class="pre">AnomalyExplanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">anomaly_feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtypes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate_dtypes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anomaly_feature_mean</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anomaly_feature_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_bayes_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjacent_ranks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#anomaly_explanation.AnomalyExplanation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class wraps a predicate and adds additional information for plotting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>anomaly_feature</strong> (<em>str</em>) – Name of the column used as the anomaly score</p></li>
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – Data that this explanation refers to</p></li>
+<li><p><strong>predicate</strong> (<em>Predicate</em>) – Predicate object defining the points covered by this explanation</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_explanation.AnomalyExplanation.convert_numpy">
+<span class="sig-name descname"><span class="pre">convert_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#anomaly_explanation.AnomalyExplanation.convert_numpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_explanation.AnomalyExplanation.pprint">
+<span class="sig-name descname"><span class="pre">pprint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#anomaly_explanation.AnomalyExplanation.pprint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_explanation.AnomalyExplanation.pprint_dict">
+<span class="sig-name descname"><span class="pre">pprint_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#anomaly_explanation.AnomalyExplanation.pprint_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_explanation.AnomalyExplanation.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#anomaly_explanation.AnomalyExplanation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pixal">
+<h2><code class="docutils literal notranslate"><span class="pre">Pixal</span></code><a class="headerlink" href="#pixal" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pixal.Pixal">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pixal.</span></span><span class="sig-name descname"><span class="pre">Pixal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_points_per_bin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main class for running PIXAL algorithm</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Data to run PIXAL on</p></li>
+<li><p><strong>num_bins</strong> (<em>int</em>) – Number of bins when converting numeric columns to ordinal</p></li>
+<li><p><strong>num_points_per_bin</strong> (<em>int</em>) – Number of points to include in each bin when converting numeric columns to ordinal</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.explain">
+<span class="sig-name descname"><span class="pre">explain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'expand_refine'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_predicates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.explain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate explanations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> (<em>str</em>) – Method that will be used to generate explanations (expand, refine, or expand_refine)</p></li>
+<li><p><strong>predicates</strong> (<em>list</em>) – List of predicates that will be used to start search, starts from scratch if None</p></li>
+<li><p><strong>threshold</strong> (<em>float</em>) – If a threshold is given the search will continue until an explanation is found with a Bayes factor that exceeds that threshold</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of explanations</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.get_features_explanations">
+<span class="sig-name descname"><span class="pre">get_features_explanations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explanations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_subsets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.get_features_explanations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get explanations that have been generated that include the given features.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>features</strong> (<em>list</em>) – List of features to be included in retrieved explanations</p></li>
+<li><p><strong>explanations</strong> (<em>list</em>) – List of explanations to search, searches self.explanations if None</p></li>
+<li><p><strong>include_subsets</strong> (<em>True</em>) – Whether or not to include explanations that have a subset of the given features</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_1d_binary">
+<span class="sig-name descname"><span class="pre">plot_1d_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">explanation_feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explanations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_1d_binary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot data and explanations for one feature and a binary anomaly feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>explanation_feature</strong> (<em>str</em>) – Feature that will be plotted on the x-axis</p></li>
+<li><p><strong>num_bins</strong> (<em>int</em>) – Number of bins for x-axis, defaults to self.num_bins if None</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_1d_binary_anomaly">
+<span class="sig-name descname"><span class="pre">plot_1d_binary_anomaly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">explanation_feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_1d_binary_anomaly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot data with one explanation feature and a binary anomaly feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>explanation_feature</strong> (<em>str</em>) – Feature that will be plotted on the x-axis</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+<li><p><strong>num_bins</strong> (<em>int</em>) – Number of bins for x-axis, defaults to self.num_bins if None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_1d_binary_explanation">
+<span class="sig-name descname"><span class="pre">plot_1d_binary_explanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">explanation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_1d_binary_explanation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot explanation with one explanation feature and a binary anomaly feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>explanation</strong> (<a class="reference internal" href="#anomaly_explanation.AnomalyExplanation" title="anomaly_explanation.AnomalyExplanation"><em>AnomalyExplanation</em></a>) – Explanation to plot</p></li>
+<li><p><strong>axis</strong> (<em>str</em>) – Axis to plot binary on, either ‘x’ or ‘y’</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_2d_binary">
+<span class="sig-name descname"><span class="pre">plot_2d_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explanations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_subsets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_2d_binary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot data and explanations for two features and a binary anomaly feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>str</em>) – Feature to plot on x-axis</p></li>
+<li><p><strong>y</strong> (<em>str</em>) – Feature to plot on y-axis</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+<li><p><strong>plot_single</strong> (<em>bool</em>) – Plot explanations with x and y features if True, only plot explanations with both x and y if False</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_2d_binary_explanation">
+<span class="sig-name descname"><span class="pre">plot_2d_binary_explanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">explanation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_2d_binary_explanation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot explanation with two explanation features and a binary anomaly feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>explanation</strong> (<a class="reference internal" href="#anomaly_explanation.AnomalyExplanation" title="anomaly_explanation.AnomalyExplanation"><em>AnomalyExplanation</em></a>) – Explanation to plot</p></li>
+<li><p><strong>x</strong> (<em>str</em>) – Explanation feature to plot on x-axis</p></li>
+<li><p><strong>y</strong> (<em>str</em>) – Explanation feature to plot on y-axis</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.plot_feature">
+<span class="sig-name descname"><span class="pre">plot_feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explanations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_subsets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.plot_feature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot explanations containing a given set of features along with the original data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>str</em><em>, </em><em>list</em>) – Feature or list of features to plot</p></li>
+<li><p><strong>num_bins</strong> (<em>int</em>) – Number of bins for x-axis, defaults to self.num_bins if None</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axes</em>) – Axis to plot on</p></li>
+<li><p><strong>plot_single</strong> (<em>bool</em>) – Plot explanations with x and y features if True, only plot explanations with both x and y if False</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.predicate_to_explanation">
+<span class="sig-name descname"><span class="pre">predicate_to_explanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.predicate_to_explanation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the given predicate instance to an explanation instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>predicate</strong> (<em>Predicate</em>) – Predicate to be converted</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Converted explanation</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#anomaly_explanation.AnomalyExplanation" title="anomaly_explanation.AnomalyExplanation">AnomalyExplanation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.predicates_to_explanations">
+<span class="sig-name descname"><span class="pre">predicates_to_explanations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicates</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.predicates_to_explanations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the multiple predicate instances to explanation instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>predicates</strong> (<em>list</em>) – Predicates to be converted</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Converted explanations</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the frontier, accepted, rejected, and conditionally accepted to empty lists.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pixal.Pixal.set_features">
+<span class="sig-name descname"><span class="pre">set_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">anomaly_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explanation_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_predicates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frontier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accepted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rejected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pixal.Pixal.set_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the anomaly feature and/or explanation features.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>anomaly_feature</strong> (<em>str</em>) – Name of the column to be used as the anomaly score</p></li>
+<li><p><strong>explanation_features</strong> (<em>list</em>) – List of columns to be included in explanations</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to PIXAL’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, bmontambault.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
