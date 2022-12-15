@@ -1,1 +1,1 @@
-from .pixal import Pixal, AnomalyExplanation
+from .pixal import Pixal
