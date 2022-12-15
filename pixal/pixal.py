@@ -15,7 +15,6 @@ from bayes_factor import BayesFactor
 from predicate_induction.data_type import Tabular
 from predicate_induction.predicate import Conjunction
 from predicate_induction.predicate_induction import BottomUp
-from .anomaly_explanation import AnomalyExplanationOld
 
 class Pixal:
     """Main class for running PIXAL algorithm
@@ -92,22 +91,22 @@ class Pixal:
             self.search = BottomUp(self.data_obj.data, base_predicates, self.score_f, frontier, accepted, rejected)
         self.update_frontier_accepted_rejected()
 
-    def predicate_to_explanation(self, predicate):
-        """Convert the given predicate instance to an explanation instance.
+#     def predicate_to_explanation(self, predicate):
+#         """Convert the given predicate instance to an explanation instance.
 
-        :param predicate: Predicate to be converted
-        :type predicate: Predicate
-        :return: Converted explanation
-        :rtype: AnomalyExplanation
-        """
+#         :param predicate: Predicate to be converted
+#         :type predicate: Predicate
+#         :return: Converted explanation
+#         :rtype: AnomalyExplanation
+#         """
 
-        return AnomalyExplanationOld(self.anomaly_feature, self.data_obj.original_data, self.data_obj.original_dtypes, predicate)
+#         return AnomalyExplanationOld(self.anomaly_feature, self.data_obj.original_data, self.data_obj.original_dtypes, predicate)
 
-    def predicates_to_explanations(self, predicates):
-        if type(predicates) == dict:
-            return {k: self.predicates_to_explanations(v) for k, v in predicates.items()}
-        else:
-            return [self.predicate_to_explanation(predicate) for predicate in predicates]
+#     def predicates_to_explanations(self, predicates):
+#         if type(predicates) == dict:
+#             return {k: self.predicates_to_explanations(v) for k, v in predicates.items()}
+#         else:
+#             return [self.predicate_to_explanation(predicate) for predicate in predicates]
 
     def explanation_to_dict(self, explanation, include_adjacent=True, predicates_find_adjacent=None):
         res = {
