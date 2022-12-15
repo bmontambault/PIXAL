@@ -61,11 +61,7 @@ class Pixal:
         self.search = None
 
     def update_frontier_accepted_rejected(self):
-        if self.search is not None:
-            self.frontier = self.predicates_to_explanations(self.search.frontier)
-            self.accepted = self.predicates_to_explanations(self.search.accepted)
-            self.rejected = self.predicates_to_explanations(self.search.rejected)
-        else:
+        if self.search is None:
             self.frontier = []
             self.accepted = []
             self.rejected = []
