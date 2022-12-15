@@ -35,7 +35,8 @@ class Pixal:
             self.data_obj.extract(data, dtypes)
         else:
             self.data_obj = data_obj
-        self.data_obj.convert_all(Conjunction.allowed_dtypes_map, Conjunction.allowed_dtypes)
+        columns = [col for col in data.columns if col in dtypes]
+        self.data_obj.convert_all(Conjunction.allowed_dtypes_map, Conjunction.allowed_dtypes, columns)
         
         self.explanation_features = []
         if anomaly_feature is not None or explanation_features is not None:
