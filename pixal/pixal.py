@@ -295,7 +295,8 @@ class Pixal:
         elif method == 'expand_refine':
             predicates = self.search.expand_refine(predicates, maxiters, 0, threshold, path, verbose, tracked_predicates)
         self.update_frontier_accepted_rejected()
-        return self.predicates_to_explanations(predicates)
+        return predicates
+#         return self.predicates_to_explanations(predicates)
         # if predicates is None:
         #     self.conditionally_accepted = predicates
         # else:
